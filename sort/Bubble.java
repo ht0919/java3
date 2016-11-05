@@ -1,5 +1,4 @@
-import java.util.Arrays;
-public class Bubble {
+public class Bubble extends Sort {
   TimerCount t = new TimerCount();
   public void sort(int[] a) {
     t.start(getClass().getSimpleName(), a.length);
