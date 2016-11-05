@@ -1,0 +1,8 @@
+2016-10-22 15:51:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "EMPLOYEES" はすでに存在します
+Table "EMPLOYEES" already exists; SQL statement:
+CREATE TABLE EMPLOYEES (name nchar(8)) [42101-192]
+2016-10-22 15:54:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "EMPLOYEES" はすでに存在します
+Table "EMPLOYEES" already exists; SQL statement:
+CREATE TABLE EMPLOYEES (name nchar(8)) [42101-192]
