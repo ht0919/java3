@@ -8,7 +8,12 @@ public class Ex0901 {
         FileOutputStream fos = new FileOutputStream(outFile);
         int i = fis.read();
         while(i != -1) {
-            fos.write(i); i = fis.read();
+
+            char c = (char)i;
+            System.out.print(c);
+
+            fos.write(i);
+            i = fis.read();
         }
         fos.flush();
         fos.close();
