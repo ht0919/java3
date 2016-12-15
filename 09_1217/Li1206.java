@@ -15,13 +15,13 @@ public class Li1206 {
             // STEP 1: データベースの接続
             con = DriverManager.getConnection
                   ("jdbc:j2:./rpgdb");     /* JDBC URLを指定 */
-            con.setAutoCommit(false);                   /* 手動コミットモードに切替 */
+            con.setAutoCommit(false);      /* 手動コミットモードに切替 */
             // STEP 2: SQL送信処理
             /* ***** メインのDB処理（SQL送信）***** */
             con.commit();                               /* コミット */
         } catch(SQLException e) {
             try {
-                con.rollback();                         /* ロールバック */
+                if (con != null) con.rollback();        /* ロールバック */
             } catch (SQLException e2) {
                 e2.printStackTrace();                   /* 接続やSQL処理の失敗時の処理（＊）*/
             } finally {

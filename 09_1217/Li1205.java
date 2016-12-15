@@ -14,10 +14,10 @@ public class Li1205 {
             con = DriverManager.getConnection("jdbc:h2:./rpgdb");  /* JDBC URLを指定 */
 
             // STEP 2-(2)-1 送信すべきSQLの雛形を準備
-            PreparedStatement pstmt = con.prepareStatement("SELECT * FROM MONSTERS WHERE HP >= ?");
+            PreparedStatement pstmt = con.prepareStatement("SELECT * FROM MONSTERS WHERE NAME = ?");
 
             // STEP 2-(2)-2 ひな形に値を流し込みSQLを組み立て送信する
-            pstmt.setInt(1, 10);            // １番目の？に10を流し込み
+            pstmt.setString(1, "ゴブリン");            // １番目の？に’ゴブリン’を流し込み
             ResultSet rs = pstmt.executeQuery();
 
             // STEP 2-(2)-3 結果表を処理する
