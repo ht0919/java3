@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-12-03
+  num: 1
+  name1: MyString
+  score1: 1
+  name2: MyString
+  score2: 1
+  name3: MyString
+  score3: 1
+  name4: MyString
+  score4: 1
+
+two:
+  date: 2016-12-03
+  num: 1
+  name1: MyString
+  score1: 1
+  name2: MyString
+  score2: 1
+  name3: MyString
+  score3: 1
+  name4: MyString
+  score4: 1

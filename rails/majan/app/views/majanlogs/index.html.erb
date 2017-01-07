@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>麻雀の記録リスト</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>日付</th>
+      <th>回数</th>
+      <th>メンバー1</th>
+      <th>点数1</th>
+      <th>メンバー2</th>
+      <th>点数2</th>
+      <th>メンバー3</th>
+      <th>点数3</th>
+      <th>メンバー4</th>
+      <th>点数4</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @majanlogs.each do |majanlog| %>
+      <tr>
+        <td><%= majanlog.date %></td>
+        <td><%= majanlog.num %></td>
+        <td><%= majanlog.name1 %></td>
+        <td><%= majanlog.score1 %></td>
+        <td><%= majanlog.name2 %></td>
+        <td><%= majanlog.score2 %></td>
+        <td><%= majanlog.name3 %></td>
+        <td><%= majanlog.score3 %></td>
+        <td><%= majanlog.name4 %></td>
+        <td><%= majanlog.score4 %></td>
+        <td><%= link_to '詳細', majanlog %></td>
+        <td><%= link_to '編集', edit_majanlog_path(majanlog) %></td>
+        <td><%= link_to '削除', majanlog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新規登録', new_majanlog_path %>

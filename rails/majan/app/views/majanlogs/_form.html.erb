@@ -1,0 +1,57 @@
+<%= form_for(@majanlog) do |f| %>
+  <% if @majanlog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@majanlog.errors.count, "error") %> prohibited this majanlog from being saved:</h2>
+
+      <ul>
+      <% @majanlog.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date, "日付" %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :num, "回数" %><br>
+    <%= f.number_field :num %>
+  </div>
+  <div class="field">
+    <%= f.label :name1, "メンバー1" %><br>
+    <%= f.text_field :name1 %>
+  </div>
+  <div class="field">
+    <%= f.label :score1, "点数1" %><br>
+    <%= f.number_field :score1 %>
+  </div>
+  <div class="field">
+    <%= f.label :name2, "メンバー2" %><br>
+    <%= f.text_field :name2 %>
+  </div>
+  <div class="field">
+    <%= f.label :score2, "点数2"  %><br>
+    <%= f.number_field :score2 %>
+  </div>
+  <div class="field">
+    <%= f.label :name3, "メンバー3" %><br>
+    <%= f.text_field :name3 %>
+  </div>
+  <div class="field">
+    <%= f.label :score3, "点数3" %><br>
+    <%= f.number_field :score3 %>
+  </div>
+  <div class="field">
+    <%= f.label :name4, "メンバー4" %><br>
+    <%= f.text_field :name4 %>
+  </div>
+  <div class="field">
+    <%= f.label :score4, "点数4" %><br>
+    <%= f.number_field :score4 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

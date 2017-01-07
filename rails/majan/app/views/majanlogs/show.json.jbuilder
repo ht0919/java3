@@ -1,0 +1,1 @@
+json.partial! "majanlogs/majanlog", majanlog: @majanlog

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>日付:</strong>
+  <%= @majanlog.date %>
+</p>
+
+<p>
+  <strong>回数:</strong>
+  <%= @majanlog.num %>
+</p>
+
+<p>
+  <strong>メンバー1:</strong>
+  <%= @majanlog.name1 %>
+</p>
+
+<p>
+  <strong>点数1:</strong>
+  <%= @majanlog.score1 %>
+</p>
+
+<p>
+  <strong>メンバー2:</strong>
+  <%= @majanlog.name2 %>
+</p>
+
+<p>
+  <strong>点数2:</strong>
+  <%= @majanlog.score2 %>
+</p>
+
+<p>
+  <strong>メンバー3:</strong>
+  <%= @majanlog.name3 %>
+</p>
+
+<p>
+  <strong>点数3:</strong>
+  <%= @majanlog.score3 %>
+</p>
+
+<p>
+  <strong>メンバー4:</strong>
+  <%= @majanlog.name4 %>
+</p>
+
+<p>
+  <strong>点数4:</strong>
+  <%= @majanlog.score4 %>
+</p>
+
+<%= link_to '編集', edit_majanlog_path(@majanlog) %> |
+<%= link_to '戻る', majanlogs_path %>

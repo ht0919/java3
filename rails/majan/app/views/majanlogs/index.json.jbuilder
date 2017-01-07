@@ -1,0 +1,1 @@
+json.array! @majanlogs, partial: 'majanlogs/majanlog', as: :majanlog
