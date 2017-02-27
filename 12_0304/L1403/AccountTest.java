@@ -1,5 +1,6 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
+
 public class AccountTest {
     // 実際にAccountをnewして使ってみるテスト
     @Test public void intstantiate() {
@@ -8,6 +9,6 @@ public class AccountTest {
         assertEquals(30000, a.balance);
     }
     @Test void transfer() {
-        /* : */
+      /* : */
     }
 }

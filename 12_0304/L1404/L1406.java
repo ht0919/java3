@@ -1,4 +1,4 @@
-public class Li1406 {
+public class L1406 {
     public static void main(String[] args) {
         int age = 33;           // 今年の年齢
         assert (++age >= 20);   // 来年20歳以上であるハズだ
