@@ -1,5 +1,5 @@
 public class AccountTest {
-	
+
     public static void main(String[] args) {
         testInstantiate();      // 1つめのテスト
         testTransfer();         // 2つめのテスト
@@ -17,6 +17,16 @@ public class AccountTest {
         System.out.println("テストを終了します");
     }
     private static void testTransfer() {
-        /* : */
+			System.out.println("送金のメソッドをテストします");
+			Account a = new Account("ミナト", 30000);
+			Account b = new Account("スズキ", 10000);
+			a.transfer(b,10000);
+			if (20000 != a.balance) {
+					System.out.println("失敗！　aの残高がおかしい");
+			}
+			if (20000 != b.balance) {
+					System.out.println("失敗！　bの残高がおかしい");
+			}
+			System.out.println("送金テストを終了します");
     }
 }
